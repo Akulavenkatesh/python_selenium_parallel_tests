@@ -13,15 +13,13 @@ class TestParallel(unittest.TestCase):
         self.driver.implicitly_wait(30)
         self.driver.maximize_window()
 
-    def test_one(self):
+    def test_four(self):
         driver = self.driver
         driver.get("https://www.google.org")
-        sleep(5)
 
-    def test_two(self):
+    def test_five(self):
         driver = self.driver
         driver.get("https://www.facebook.com")
-        sleep(5)
 
     def tearDown(self):
         self.driver.quit()

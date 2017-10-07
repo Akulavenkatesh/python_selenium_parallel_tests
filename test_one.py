@@ -16,7 +16,6 @@ class TestOne(unittest.TestCase):
     def test_one(self):
         driver = self.driver
         driver.get("https://www.yahoo.com")
-        sleep(5)
 
     def tearDown(self):
         self.driver.quit()

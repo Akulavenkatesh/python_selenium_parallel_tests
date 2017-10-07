@@ -13,10 +13,9 @@ class TestTwo(unittest.TestCase):
         self.driver.implicitly_wait(30)
         self.driver.maximize_window()
 
-    def test_one(self):
+    def test_two(self):
         driver = self.driver
         driver.get("https://www.youtube.com")
-        sleep(5)
 
     def tearDown(self):
         self.driver.quit()

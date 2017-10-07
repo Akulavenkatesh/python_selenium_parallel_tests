@@ -13,10 +13,9 @@ class TestThree(unittest.TestCase):
         self.driver.implicitly_wait(30)
         self.driver.maximize_window()
 
-    def test_one(self):
+    def test_three(self):
         driver = self.driver
         driver.get("https://www.twitter.com")
-        sleep(5)
 
     def tearDown(self):
         self.driver.quit()
